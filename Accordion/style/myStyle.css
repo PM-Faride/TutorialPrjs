@@ -1,0 +1,56 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: 'vazir';
+    src: url('../../fonts/vazir.eot');
+    /* IE9 Compat Modes */
+    src: url('../../fonts/vazir.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../../fonts/vazir.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../../fonts/vazir.woff') format('woff');
+    /* Pretty Modern Browsers */
+}
+
+body {
+    direction: rtl;
+    font-family: "vazir";
+    height: 100vh;
+}
+
+.container {
+    width: 610px;
+    margin: 100px auto;
+}
+
+.accordion-title {
+    font-size: 18px;
+    padding: 5px;
+    background-color: rgb(0, 204, 255);
+    border: 3px solid rgb(7, 0, 104);
+    cursor: pointer;
+}
+
+.accordion-title::before {
+    content: "+";
+    margin-left: 10px;
+}
+
+.accordion-title.active::before {
+    content: "-";
+    margin-left: 15px;
+}
+
+.content {
+    background-color: rgb(235, 142, 235);
+    /*border: 3px solid purple;
+    */
+    height: 0;
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+}

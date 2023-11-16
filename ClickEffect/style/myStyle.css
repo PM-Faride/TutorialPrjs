@@ -1,0 +1,81 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: 'vazir';
+    src: url('../../fonts/vazir.eot');
+    /* IE9 Compat Modes */
+    src: url('../../fonts/vazir.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../../fonts/vazir.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../../fonts/vazir.woff') format('woff');
+    /* Pretty Modern Browsers */
+}
+
+body {
+    background-color: teal;
+    direction: rtl;
+    font-family: 'vazir';
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    align-items: center;
+    height: 100vh;
+}
+
+a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    width: 160px;
+    height: 45px;
+    /*text-align: center;
+    */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rebeccapurple;
+    overflow: hidden;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+a:nth-child(2) {
+    background-color: royalblue;
+    margin-right: 70px;
+}
+
+span {
+    position: absolute;
+    background-color: white;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    animation: buttonEffect 1s linear infinite;
+    -webkit-animation: buttonEffect 1s linear infinite;
+}
+
+@keyframes buttonEffect {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 0.4;
+    }
+    100% {
+        width: 200px;
+        height: 200px;
+        opacity: 0;
+    }
+}

@@ -1,0 +1,29 @@
+.container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+button {
+    width: 200px;
+    border: none;
+    font-size: 25px;
+    color: #fff;
+    font-family: "vazir";
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:focus {
+    border: 5px solid rebeccapurple;
+}
+
+#grey {
+    background-color: grey;
+}
+
+#black {
+    background-color: black;
+}

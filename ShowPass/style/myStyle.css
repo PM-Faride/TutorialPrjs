@@ -1,0 +1,51 @@
+h1 {
+    padding-bottom: 40px;
+    margin-bottom: 35px;
+    border-bottom: 5px solid rebeccapurple;
+}
+
+.passwordArea {
+    display: flex;
+    width: 500px;
+    height: 60px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+#password {
+    font-family: "vazir";
+    font-weight: bold;
+    font-size: 14px;
+    height: 50px;
+    width: 65%;
+    padding-right: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    right: 10px;
+}
+
+.toggle {
+    position: absolute;
+    right: 43px;
+    font-size: 18px;
+    opacity: 0.7;
+    color: #505050;
+    cursor: pointer;
+}
+
+.toggle:hover {
+    opacity: 1;
+}
+
+.hide .fa-eye {
+    display: none;
+}
+
+.hide .fa-eye-slash {
+    display: block;
+}
+
+.fa-eye-slash {
+    display: none
+}

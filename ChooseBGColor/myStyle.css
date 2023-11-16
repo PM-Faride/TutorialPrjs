@@ -1,0 +1,15 @@
+.palette {
+    position: absolute;
+    display: flex;
+    background-color: #fff;
+    right: 40px;
+    top: 30px;
+    padding: 10px;
+}
+
+a {
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+    cursor: pointer;
+}
